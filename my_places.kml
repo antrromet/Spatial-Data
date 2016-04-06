@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+      <Style id="z1">
+         <IconStyle>
+          <Icon>
+            <href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+          </Icon>
+         </IconStyle>
+      </Style>
+      <Style id="transRedPoly">
+        <LineStyle>
+          <width>1.5</width>
+        </LineStyle>
+        <PolyStyle>
+          <color>7d0000ff</color>
+        </PolyStyle>
+      </Style>
+      <Style id="thickBlackLine">
+        <LineStyle>
+          <color>87000000</color>
+          <width>5</width>
+        </LineStyle>
+      </Style>
+      <Placemark>
+        <name>Portland Place Apartments</name>
+        <description>Home. 2353 Portland St, Los Angeles, CA 90007</description>
+        <Point>
+          <coordinates>-118.282182,34.032726</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Mardette Apartments</name>
+        <description>Balajis Place. 2707 Portland St, Los Angeles, CA 90007</description>
+        <Point>
+          <coordinates>-118.283131,34.029700</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Regal LA LIVE Stadium 14</name>
+        <description>Movies at LA Live. 1000 W Olympic Blvd, Los Angeles, CA 90015</description>
+        <Point>
+          <coordinates>-118.270183,34.042645</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Ronald Tutor Campus Center</name>
+        <description>Lunch and studying the Graduate family room. 3607 Trousdale Pkwy, Los Angeles, CA 90089</description>
+        <Point>
+          <coordinates>-118.286469,34.020065</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Leavey Library</name>
+        <description>Studying and discussing with team members generally. Extremely crowded, can't go if we need to concentrate. 3607 Trousdale Pkwy, Los Angeles, CA 90089</description>
+        <Point>
+          <coordinates>-118.282650,34.021779</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Science and Engineering Library</name>
+        <description>Best place for quite study cubicle. 910 Bloom Walk, Los Angeles, CA 90089</description>
+        <Point>
+          <coordinates>-118.288856,34.019662</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Transamerica Center</name>
+        <description>Office work, School of Social Work. 1150 S Olive St, Los Angeles, CA 90015</description>
+        <Point>
+          <coordinates>-118.261750,34.039527</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Chipotle Mexican Grill</name>
+        <description>Awesome rice bowl with Barbacoa. 3748 S Figueroa St, Los Angeles, CA 90007</description>
+        <Point>
+          <coordinates>-118.282258,34.016694</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>El Huero</name>
+        <description>Awesome beef quesadilla. 3000 S Figueroa St, Los Angeles, CA 90007</description>
+        <Point>
+          <coordinates>-118.277783,34.024700</coordinates>
+        </Point>
+        <styleUrl>#z1</styleUrl>
+      </Placemark>
+      
+      <Placemark>
+          <name>Convex Hull</name>
+          <description>Convex Hull</description>
+          <styleUrl>#transRedPoly</styleUrl>
+          <Polygon>
+            <extrude>1</extrude>
+            <altitudeMode>relativeToGround</altitudeMode>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>-118.282258,34.016694,10
+ 		        -118.288856,34.019662,10
+ 		        -118.282182,34.032726,10
+ 		        -118.270183,34.042645,10
+ 		        -118.26175,34.039527,10
+ 		        -118.282258,34.016694,10
+ 		        </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        
+        <Placemark>
+          <name>First Nearest Neighbor</name>
+          <description>3 Nearest Neighbors of home</description>
+          <styleUrl>#thickBlackLine</styleUrl>
+          <LineString>
+            <coordinates>-118.283131,34.0297,10
+            -118.282182,34.032726,10
+ 		   	</coordinates>
+          </LineString>
+        </Placemark>
+        
+        <Placemark>
+          <name>Second Nearest Neighbor</name>
+          <description>3 Nearest Neighbors of home</description>
+          <styleUrl>#thickBlackLine</styleUrl>
+          <LineString>
+            <coordinates>-118.277783,34.0247,10
+            -118.282182,34.032726,10
+ 		   	</coordinates>
+          </LineString>
+        </Placemark>
+        
+        <Placemark>
+          <name>Third Nearest Neighbor</name>
+          <description>3 Nearest Neighbors of home</description>
+          <styleUrl>#thickBlackLine</styleUrl>
+          <LineString>
+            <coordinates>-118.28265,34.021779,10
+            -118.282182,34.032726,10
+ 		   	</coordinates>
+          </LineString>
+        </Placemark>
+      
+    </Document>
+</kml>
